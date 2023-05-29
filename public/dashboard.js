@@ -109,10 +109,10 @@ logoutButton.addEventListener('click',()=>{
   .then(data =>{
 
      // Replace the current history state with the login page's URL
-     window.history.replaceState(null, null, '/login');
+     window.history.replaceState(null, null, '/index');
      
     // Redirect to the login page
-    window.location.href = '/login';
+    window.location.href = '/index';
   })
   .catch(error =>{
     console.error('Error logging out:', error);
