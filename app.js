@@ -52,7 +52,7 @@ const db = mongoose.connection;
 
 // Route: Sign Up
 const authController = require('./controllers/authController');
-app.get('/signUp', authController.getSignUpPage);
+// app.get('/signUp', authController.getSignUpPage);
 app.post('/signUp', authController.signUp);
 
 // Route: Login
