@@ -5,6 +5,7 @@ const path = require('path');
 const multer = require('multer');
 const cloudinary = require('cloudinary').v2;
 const User = require('./models/user.js');
+require('dotenv').config();
 
 const app = express();
 
@@ -28,14 +29,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Configure Cloudinary
 cloudinary.config({
-  cloud_name: 'drnk3cgr0',
-  api_key: '488214663466711',
-  api_secret: 'slATiN97gz0wnJupKFeqNTvKtMY',
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 // Connect to MongoDB
 mongoose
-  .connect('mongodb+srv://yashved01:NtHUyReL5Gj9qRrj@yash01.95jixfo.mongodb.net/test', {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
