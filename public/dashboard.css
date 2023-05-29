@@ -1,0 +1,179 @@
+.body_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #aeb3df;
+  /* padding: 20px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  justify-content: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.name {
+  margin-left: 3px;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topbar {
+  display: flex;
+  background-color: #aeb3df;
+  border-left: solid;
+  padding: 10px;
+  position: fixed;
+  margin-left: 300px;
+  height: 60px;
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 24%;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  font-family:cursive;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background-color: #dfbebe;
+  color: #2e1fb5;
+  font-size: 20px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.dropdown-content p {
+  color: #333;
+  padding: 8px 12px;
+  text-shadow:#333;
+}
+.dropdown-content {
+  text-shadow:#dfbebe;
+  left: -230px;
+  visibility:visible;
+  display: none;
+  padding: 30px;
+  position: absolute;
+  font-family:cursive;
+  font-weight: bolder;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  min-width: 250px;
+  border:solid;
+  border-color: black;
+}
+
+#logout_button{
+  font-weight: bold;
+  border: solid;
+  border-radius: 20px;
+  height: 40px;
+  background-color: rgb(187, 215, 205);
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 305px;
+  margin-top: 65px; /* Adjust the top margin as needed */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-container img {
+  background-color: #aeb3df;
+  border: solid;
+  border-color: rgb(123, 129, 134);
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  max-height: 200px;
+  object-fit: cover;
+  cursor:pointer;
+  transition: transform 0.3s ease;
+}
+.photo-container:hover img {
+  transform: scale(1.2);
+}
+
+.photo-container p {
+  color: brown;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.upload_container{
+  border-top: solid;
+ 
+}
+
+form{
+  margin-top: 30px;
+  padding:20px;
+  align-items: center;
+}
+
+.InputFile{
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.title{
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.upload_button{
+  border: none;
+  background-color: #aeb3df;
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+}
+.upload_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  justify-content:start;
+}
