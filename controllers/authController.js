@@ -4,9 +4,9 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const { generateToken } = require('../helpers/jwt.js');
 
-// exports.getSignUpPage = (req, res) => {
-//   res.sendFile(path.join(__dirname, '../public', 'signUp.html'));
-// };
+exports.getSignUpPage = (req, res) => {
+  res.sendFile(path.join(__dirname, '../public', 'signUp.html'));
+};
 
 exports.signUp = async (req, res) => {
   const { name, email, password } = req.body;
