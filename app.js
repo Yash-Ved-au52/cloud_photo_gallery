@@ -56,7 +56,7 @@ app.get('/signUp', authController.getSignUpPage);
 app.post('/signUp', authController.signUp);
 
 // Route: Login
-app.get('/login', authController.getLoginPage);
+app.get('/index', authController.getLoginPage);
 app.post('/login', authController.login);
 
 // Route: Logout
